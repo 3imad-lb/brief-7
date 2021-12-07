@@ -1,0 +1,22 @@
+input{
+    margin-top: 40px;
+}
+#valider{
+    width: 100px;
+    margin-left: 30px;
+    height: 60px;
+}
+#valider{
+    color: rgb(40, 131, 48);
+}
+label{
+    color: red;
+    font-style: italic;
+}
+#langue{
+    margin-top: 30px;
+}
+.radio{
+    color: black;
+    font-style: normal;
+}

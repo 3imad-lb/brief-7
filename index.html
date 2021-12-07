@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+
+    <form id="myForm" action="">
+    <input type="text" id="titre" placeholder="TITRE">
+    <br>
+    <label for="titre" id="labeltitre"></label>
+    <br>
+    <input type="text" id="auteur" placeholder="AUTEUR">
+    <br>
+    <label for="auteur" id="labelauteur"></label>
+    <br>
+    <label for="auteur" id="labelauteur2"></label>
+    <br>
+    <input type="number" id="prix" placeholder="PRIX MAD">
+    <br>
+    <label for="prix" id="labelprix"></label>
+    <br>
+    <input type="date" id="date">
+    <br>
+    <label for="date" id="labeldate"></label>
+    <br>
+    <select id="langue" name="langue">
+      <option value="SELECTIONEZ UNE LANGUE">SELECTIONEZ UNE LANGUE</option>  
+      <option value="ANGLAIS">ANGLAIS</option>
+      <option value="ARABE">ARABE</option>
+      <option value="FRANÇAIS">FRANÇAIS</option>
+    </select>
+    <br>
+    <label for="langue" id="labelangue"></label>
+    <br>
+
+          <label for="" class="radio">TYPE</label><br>
+          <label for="" id="typelabel"></label><br>
+          <input type="radio" id="Roman" name="type">
+          <label for="Roman" class="radio">Roman</label><br>
+
+          <input type="radio" id="Essai" name="type">
+          <label for="Essai" class="radio">Essai</label><br>
+        
+          <input type="radio" id="Bande-Dessinée" name="type">
+          <label for="Bande-Dessinée" class="radio">Bande-Dessinée</label><br>
+        
+          <input type="radio" id="autres" name="type">
+          <label for="autres" class="radio">Autres</label><br>
+    
+
+    
+   
+    <input type="submit" id="valider" value="VALIDER" onclick="event.preventDefault();validation();">
+
+    </form>
+    
+    <script src="form.js"></script>
+</body>
+</html>
