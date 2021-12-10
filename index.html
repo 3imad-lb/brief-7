@@ -12,21 +12,21 @@
     <form id="myForm" action="">
     <input type="text" id="titre" placeholder="TITRE">
     <br>
-    <label for="titre" id="labeltitre"></label>
+    <label for="titre" id="labeltitre" class="valid"></label>
     <br>
     <input type="text" id="auteur" placeholder="AUTEUR">
     <br>
-    <label for="auteur" id="labelauteur"></label>
+    <label for="auteur" id="labelauteur" class="valid"></label>
     <br>
-    <label for="auteur" id="labelauteur2"></label>
+    <label for="auteur" id="labelauteur2" class="valid"></label>
     <br>
     <input type="number" id="prix" placeholder="PRIX MAD">
     <br>
-    <label for="prix" id="labelprix"></label>
+    <label for="prix" id="labelprix" class="valid"></label>
     <br>
     <input type="date" id="date">
     <br>
-    <label for="date" id="labeldate"></label>
+    <label for="date" id="labeldate" class="valid"></label>
     <br>
     <select id="langue" name="langue">
       <option value="SELECTIONEZ UNE LANGUE">SELECTIONEZ UNE LANGUE</option>  
@@ -35,29 +35,46 @@
       <option value="FRANÇAIS">FRANÇAIS</option>
     </select>
     <br>
-    <label for="langue" id="labelangue"></label>
+    <label for="langue" id="labelangue" class="valid"></label>
     <br>
 
-          <label for="" class="radio">TYPE</label><br>
-          <label for="" id="typelabel"></label><br>
-          <input type="radio" id="Roman" name="type">
+          <h3>TYPE</h3><br>
+          
+          <input type="radio"  name="type" value="Roman">
           <label for="Roman" class="radio">Roman</label><br>
 
-          <input type="radio" id="Essai" name="type">
+          <input type="radio"  name="type" value="Essai">
           <label for="Essai" class="radio">Essai</label><br>
         
-          <input type="radio" id="Bande-Dessinée" name="type">
+          <input type="radio"  name="type" value="Bande-Dessinée">
           <label for="Bande-Dessinée" class="radio">Bande-Dessinée</label><br>
         
-          <input type="radio" id="autres" name="type">
+          <input type="radio"  name="type" value="Autres">
           <label for="autres" class="radio">Autres</label><br>
+          <br><label for="" id="typelabel" class="valid"></label><br>
     
 
     
    
     <input type="submit" id="valider" value="VALIDER" onclick="event.preventDefault();validation();">
+    
 
     </form>
+
+
+    <br>
+    <table id="table" border="2">
+      <tr>
+        <td>TITRE</td>
+        <td>AUTEUR</td>
+        <td>PRIX MAD</td>
+        <td>DATE</td>
+        <td>LANGUE</td>
+        <td>TYPE</td>
+        <td>ACTION</td>
+      </tr>
+      
+    </table>
     
     <script src="form.js"></script>
 </body>
